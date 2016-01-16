@@ -13,6 +13,5 @@ script:
 after_success:
 - chmod a+x after_success.sh
 - ./after_success.sh
-after_failure:
 
 
