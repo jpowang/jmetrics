@@ -11,7 +11,7 @@ install:
 before_script: 
 script: 
 after_success:
-- ./afterSuccess.sh
+- ./after_success.sh
 after_failure:
 
 
