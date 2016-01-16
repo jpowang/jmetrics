@@ -11,7 +11,7 @@ install:
 before_script: 
 script: 
 after_success:
-- chmod a+x after_success.sh
-- ./after_success.sh
+- 'if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then bash after_success.sh; fi'
+
 
 
