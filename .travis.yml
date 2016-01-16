@@ -9,7 +9,7 @@ before_install:
 install:
 - mvn clean install -Dgpg.skip=true
 before_script: 
-script: 
+script:
 after_success:
 - 'if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then bash after_success.sh; fi'
 
