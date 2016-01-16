@@ -7,6 +7,6 @@
 # 4. Use -q option to only display Maven errors and warnings.
 # 5. Use --settings to force the usage of our "settings.xml" file.
 # 6. Enable the profile that generates the javadoc and the sources archives.
-
+    echo "grabbing abc"
     mvn clean deploy -q --settings settings.xml
 
