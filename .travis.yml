@@ -1,6 +1,6 @@
 branches:
   only:
-  - master
+  - master2
   - stable
 language: java
 jdk:
