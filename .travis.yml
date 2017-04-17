@@ -1,6 +1,6 @@
 branches:
   only:
-  - master
+  - master2
   - stable
 language: java
 jdk:
@@ -11,7 +11,7 @@ install:
 before_script: 
 script: 
 after_success:
-- mvn clean deploy  -Dgpg.skip=true
-after_failure:
-- cat com.github.lafa.jmetrics/target/surefire-reports/*.txt
-- cat com.github.lafa.jmetrics/core/target/surefire-reports/*.txt
+- 'if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then bash after_success.sh; fi'
+
+
+
